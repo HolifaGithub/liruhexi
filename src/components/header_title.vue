@@ -22,7 +22,7 @@ export default {
 }
 .container .title{
     color: #eee;
-	font-size: 3rem;
+	font-size: 2rem;
 	text-shadow: 5px 5px 5px black, 0px 0px 2px pink; 
 }
 </style>

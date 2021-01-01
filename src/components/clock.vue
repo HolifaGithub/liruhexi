@@ -55,16 +55,16 @@ background-image: linear-gradient(to right, pink 0%, skyblue 100%);
 }
 #clock .time {
   letter-spacing: 0.05em;
-  font-size: 80px;
+  font-size: 3rem;
   padding: 5px 0;
 }
 #clock .date {
   letter-spacing: 0.1em;
-  font-size: 24px;
+  font-size: 1.2rem;
 }
 #clock .text {
   letter-spacing: 0.1em;
-  font-size: 18px;
-  padding: 20px 0 0;
+  font-size: 1rem;
+  padding: 0.3rem 0 0;
 }
 </style>

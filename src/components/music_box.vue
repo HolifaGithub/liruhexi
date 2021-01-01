@@ -1,7 +1,7 @@
 <template>
 <div class="container">
-	<div>
-		<p class="music-title">{{isShowTitle ? `正在为您播放：&lt;&lt;美丽的神话&gt;&gt;...` : `点击播放歌曲～～`}}</p>
+	<div class="audio-container">
+		<p class="music-title">{{isShowTitle ? `正在为您播放：&lt;&lt;易烊千玺 - 大城小爱 (Live)&gt;&gt;...` : `点击播放歌曲~~`}}</p>
 		<audio :src="musicSrc" :autoplay="true" :loop="true" id="audio" controls class="audio" @play="onClick" @pause="onClick"/>
 	</div>
       <div class="box">
@@ -32,7 +32,7 @@ export default {
 }
 
 const useMusic = ()=>{
-	const musicSrc = `${baseSrc}%E5%B0%8F%E7%9C%BC%E9%91%AB%20-%20%E7%BE%8E%E4%B8%BD%E7%9A%84%E7%A5%9E%E8%AF%9D%20%28%E7%89%87%E6%AE%B5%29.mp3`
+	const musicSrc = `${baseSrc}%E6%98%93%E7%83%8A%E5%8D%83%E7%8E%BA%20-%20%E5%A4%A7%E5%9F%8E%E5%B0%8F%E7%88%B1%20%28Live%29.mp3`
 	let isShowTitle = ref(false);
 	const onClick = ()=>{
 		console.log('aa');
@@ -54,30 +54,41 @@ const usePictures = ()=>{
 <style scoped>
 .container{
 	width:100%;
-	height: 70vh;
+	height: 35rem;
+	padding-top: 2rem;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: flex-start;
 	align-items: center;
 	background-image: linear-gradient(to right, pink 0%, skyblue 100%);
 }
 .audio{
-	margin-right:25vh;
+	margin-left: 1rem;
+}
+.audio-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
 }
 .music-title{
 	color: #fff;
-	margin-bottom: 2vh;
-	max-width: 300px;
-	background-color: #333;
+	margin-bottom: 1rem;
+	font-size: 1rem;
+	width:100%;
 	text-align: center;
 	height: 30px;
+	background-color: rgba(255,255,255,0.3);
+	border-radius: 5px;
 	line-height: 30px;
-	border-radius: 10px;
+	border-radius: 1px;
+	pointer-events: none;
 }
 .box {
 	width:200px;
 	height:200px;
 	margin-top: 50px;
+	user-select: none;
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
