@@ -1,4 +1,6 @@
 <template>
+<div>
+      <audio src="https://xiaoyuanhuan-1301020050.cos.ap-guangzhou.myqcloud.com/liruhexi/%E8%BF%B7%E4%BA%BA%E8%80%97%E5%AD%90%E7%B2%BE%20-%20%E9%9B%A8%E7%88%B1.mp3" :autoplay="true" :loop="true" id="audio"/>
       <div class="box">
         <ul class="minbox">
             <li>
@@ -41,11 +43,16 @@
             </li>
         </ol>
     </div>
+</div>
 </template>
 
 <script>
 export default {
-
+  name:"App",
+  mounted(){
+  },
+  setup(){
+  }
 }
 </script>
 
