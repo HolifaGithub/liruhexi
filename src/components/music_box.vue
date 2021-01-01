@@ -74,7 +74,7 @@ const usePictures = ()=>{
 .music-title{
 	color: #fff;
 	margin-bottom: 1rem;
-	font-size: 1rem;
+	font-size: 0.8rem;
 	width:100%;
 	text-align: center;
 	height: 30px;
@@ -88,6 +88,7 @@ const usePictures = ()=>{
 	width:200px;
 	height:200px;
 	margin-top: 50px;
+	margin-left: 0.5rem;
 	user-select: none;
 	background-size:cover;
 	background-repeat:no-repeat;
